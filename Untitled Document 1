@@ -1,0 +1,14 @@
+conda create -n factory_automation python=3.10 -y
+
+conda env list
+
+conda anctivate factory_automation
+
+pip install -r requirements.txt 
+
+yolo detect train data=data.yaml model=yolov8n.pt epochs=50 imgsz=640 save=True
+
+## for resume training 
+yolo task=detect mode=train resume=True model=/home/skyai/Factory_Automation/runs/detect/train15/weights/last.pt 
+
+
