@@ -1,0 +1,23 @@
+// create virtual environment
+conda create -n factory_automation python=3.10 -y
+// list of virtual environment
+conda env list
+// activation of environment
+conda anctivate factory_automation
+// intall library
+pip install -r requirements.txt 
+
+// after download the dataset there is a data.yaml file change the path of test,train and valid and paste the path of file in data=____
+//there are many hyperparameters..
+  <a href="https://docs.ultralytics.com/guides/hyperparameter-tuning/#repeat">link</a>
+
+yolo detect train data=data.yaml model=yolov8n.pt epochs=50 imgsz=640 save=True
+
+// for resume training  in case system get closed
+  
+yolo task=detect mode=train resume=True model=/home/skyai/Factory_Automation/runs/detect/train15/weights/last.pt 
+
+// testing modal
+  
+
+
