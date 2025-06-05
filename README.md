@@ -3,3 +3,6 @@ In this project, the system detects if a person is not wearing a helmet and acti
 
 <h>there is a link for datase</h>
 <a href="https://app.roboflow.com/summer-intern-hwmnt/no-helmet-detection-0xppz/1">click here</a>
+there are many hyperparameters..
+<a href="https://docs.ultralytics.com/guides/hyperparameter-tuning/#repeat">link</a>
+
