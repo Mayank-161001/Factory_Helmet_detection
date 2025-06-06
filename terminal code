@@ -16,6 +16,9 @@ yolo detect train data=data.yaml model=yolov8n.pt epochs=50 imgsz=640 save=True
 yolo task=detect mode=train resume=True model=/home/skyai/Factory_Automation/runs/detect/train15/weights/last.pt 
 
 // testing modal
-  
+
+
+yolo task=detect mode=predict model= "/content/runs/detect/train/weights/best.pt" conf=0.15 source="/content/sample2.mp4" save=True
+
 
 
