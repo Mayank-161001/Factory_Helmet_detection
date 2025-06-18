@@ -9,7 +9,7 @@ pip install -r requirements.txt
 
 // after download the dataset there is a data.yaml file change the path of test,train and valid and paste the path of file in data=____
 
-yolo detect train data=data.yaml model=yolov8n.pt epochs=50 imgsz=640 save=True
+yolo detect train data=path../data.yaml model=yolo11m.pt epochs=50 imgsz=640 save=True
 
 // for resume training  in case system get closed
   
